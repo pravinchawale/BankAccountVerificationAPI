@@ -1,0 +1,11 @@
+logging:
+  level: 
+    com.jpmorgn.bank.verification: INFO
+    
+sources:
+  - 
+    name: source1
+    url: https://prod-source1.com/v1/api/account/validate
+  - 
+    name: source2
+    url: https://prod-source2.com/v2/api/account/validate

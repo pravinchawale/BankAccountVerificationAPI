@@ -1,0 +1,7 @@
+async.conf:
+  maxPoolSize: '100'
+  corePoolSize: '7'
+  queueCapacity: '70'
+  
+sources.connectTimeout: 1000
+sources.connectionReqTimeout : 1500

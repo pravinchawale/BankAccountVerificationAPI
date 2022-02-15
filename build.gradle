@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.jpmorgn.bank.verification'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	/*---------Spring----------*/
+	implementation 'org.springframework.boot:spring-boot-starter:2.6.3'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3'
+	implementation 'org.springframework.boot:spring-boot-starter-tomcat:2.6.3'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.3'
+	
+	/*---------Apache http components----------*/
+	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+	implementation 'org.apache.httpcomponents:httpasyncclient:4.1.5'
+	implementation 'org.apache.httpcomponents:httpcore:4.4.15'
+	
+	/*---------SLF4J----------*/
+	implementation 'org.slf4j:slf4j-api:1.7.25'
+	
+	/*---------Lombok----------*/
+	implementation 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	
+	testCompileOnly 'org.projectlombok:lombok:1.18.22'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.5.2'
+	testImplementation 'org.assertj:assertj-core:3.18.1'
+	testImplementation 'junit:junit:4.12'
+	
+}
+
